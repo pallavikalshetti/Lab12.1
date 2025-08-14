@@ -1,0 +1,9 @@
+What is the difference between res.send() and res.sendFile()? When would you use one over the other?
+==>res.send() => its great for sending text or small data.
+res.sendFile() => is used to send files as responses like HTML and images.
+
+Why is the path module necessary when serving files? What could go wrong if you just used a relative path like 'public/index.html'?
+==>The path module helps create absolute or correct file paths, ensures your server finds the correct file. using just a relative path like 'public/index.html' can cause errors because the server current working directory may differ from the scripts location.
+
+How would you add a third page (e.g., a menu page) to this server? What steps would you take?
+==>create a new HTML file in the public folder like menu.html with content for the menu page and add a new route to server.js file to handle GET requests for menu.
